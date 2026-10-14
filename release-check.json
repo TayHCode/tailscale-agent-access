@@ -1,0 +1,15 @@
+{
+  "quickstart": [
+    {
+      "file": "README.md",
+      "line": 10,
+      "argv": ["python3", "agent_access.py", "summary"]
+    }
+  ],
+  "checks": [
+    {
+      "argv": ["python3", "-m", "unittest", "discover", "-s", "tests"],
+      "role": "tests"
+    }
+  ]
+}

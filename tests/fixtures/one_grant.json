@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "lan_hosts": [
+    {"name": "docs-server", "address": "192.0.2.20", "service": "documentation server"}
+  ],
+  "agents": [
+    {"name": "agent-a", "tag": "tag:agent-agent-a", "allow": [{"host": "docs-server", "ports": ["tcp:443"]}], "never": ["unlisted_lan_hosts", "other_agents", "internet_or_exit_nodes", "tailnet_administration", "policy_or_device_changes", "all_unlisted_ports"]},
+    {"name": "agent-b", "tag": "tag:agent-agent-b", "allow": [], "never": ["unlisted_lan_hosts", "other_agents", "internet_or_exit_nodes", "tailnet_administration", "policy_or_device_changes", "all_unlisted_ports"]},
+    {"name": "agent-c", "tag": "tag:agent-agent-c", "allow": [], "never": ["unlisted_lan_hosts", "other_agents", "internet_or_exit_nodes", "tailnet_administration", "policy_or_device_changes", "all_unlisted_ports"]}
+  ]
+}
